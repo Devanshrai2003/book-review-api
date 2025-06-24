@@ -105,7 +105,7 @@ booksRouter.get("/:id", async (req, res) => {
           take: Number(limit),
           select: {
             id: true,
-            content: true,
+            description: true,
             rating: true,
             user: { select: { id: true, username: true } },
           },
